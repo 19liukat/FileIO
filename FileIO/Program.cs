@@ -17,8 +17,15 @@ namespace FileIO
             {
                 numbers[i] = int.Parse(lines[i]);
             }
-            Console.WriteLine(numbers[6]);
-            //numbers = final array w/ int
+            //writing every even number
+            for(int i = 0; i<numbers.Length; i++){
+                if(numbers[i]%2==0){
+                    Console.WriteLine(numbers[i]);
+                }
+            }
+
+            
+            
             Console.ReadKey();
 			}
 		}
