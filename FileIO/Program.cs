@@ -8,7 +8,6 @@ namespace FileIO
     {
         static void Main(string[] args)
         {
- trial1
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             path += "//Text.txt";
             string[] lines = System.IO.File.ReadAllLines(path);
