@@ -6,7 +6,8 @@ namespace FileIO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter the file name");
+            string[] lines = System.IO.File.ReadAllLines(@Console.ReadLine());
         }
     }
 }
