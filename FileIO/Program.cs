@@ -17,12 +17,17 @@ namespace FileIO
             {
                 numbers[i] = int.Parse(lines[i]);
             }
-            Console.WriteLine(numbers[6]);
-            //numbers = final array w/ int
-            Console.ReadKey();
+            
+            for (int x=0; x<numbers.Length; x+=5){
+                Console.WriteLine(numbers[x]);
+                }
+                Console.ReadKey();
+            }
+        
+        
 			}
 		}
-	}
+	
 
 
 
