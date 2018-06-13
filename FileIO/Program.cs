@@ -17,9 +17,17 @@ namespace FileIO
             {
                 numbers[i] = int.Parse(lines[i]);
             }
-            Console.WriteLine(numbers[6]);
-            //numbers = final array w/ int
+
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                if(numbers[i] % 3 == 0)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
+
             Console.ReadKey();
+
 			}
 		}
 	}
