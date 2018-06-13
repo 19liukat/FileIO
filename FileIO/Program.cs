@@ -7,21 +7,16 @@ namespace FileIO
         static void Main(string[] args)
         {
 
-			
-				FileStream F = new FileStream("test.dat", FileMode.OpenOrCreate,
-				   FileAccess.ReadWrite);
 
-				for (int i = 1; i <= 20; i++)
-				{
-					F.WriteByte((byte)i);
-				}
-				F.Position = 0;
-				for (int i = 0; i <= 20; i++)
-				{
-					Console.Write(F.ReadByte() + " ");
-				}
-				F.Close();
-				Console.ReadKey();
+            Console.WriteLine("Enter the file name");
+            string[] lines = System.IO.File.ReadAllLines(@Console.ReadLine());
+            int[] numbers = new int[lines.Length];
+            for (int i = 0; i < lines.Length; i++)
+            {
+                numbers[i] = int.Parse(lines[i]);
+            }
+            //numbers = final array w/ int
+            Console.ReadKey();
 			}
 		}
 	}
