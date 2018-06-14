@@ -17,6 +17,10 @@ namespace FileIO
             {
                 numbers[i] = int.Parse(lines[i]);
             }
+            // display the whole list
+            for (int i = 0; i < numbers.Length; i++){
+                Console.WriteLine(numbers[i]);
+            }
             //displaying every even number
             for(int i = 0; i<numbers.Length; i++){
                 if(numbers[i]%2==0){
