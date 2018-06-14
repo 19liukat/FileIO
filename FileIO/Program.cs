@@ -18,6 +18,9 @@ namespace FileIO
             {
                 numbers[i] = Int32.Parse(lines[i]);
             }
+            Console.WriteLine(numbers[6]);
+            //numbers = final array w/ int
+    
 
             for(int i = 0; i < numbers.Length; i++)
             {
@@ -41,6 +44,9 @@ namespace FileIO
                     Console.WriteLine(numbers[i]);
                 }
             }
+            for (int x=0; x<numbers.Length; x+=5){
+                Console.WriteLine(numbers[x]);
+                }
 
             
         
@@ -48,3 +54,4 @@ namespace FileIO
     }
     }
 }
+            
