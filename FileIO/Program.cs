@@ -47,6 +47,14 @@ namespace FileIO
             for (int x=0; x<numbers.Length; x+=5){
                 Console.WriteLine(numbers[x]);
                 }
+                //odd numbers
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                if(numbers[i] % 2 == 1)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
 
             
         
