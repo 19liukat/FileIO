@@ -20,20 +20,11 @@ namespace FileIO
             }
             Console.WriteLine(numbers[6]);
             //numbers = final array w/ int
-            Console.ReadKey();
-			}
-			Console.WriteLine("Sum of list: " + sum); //displays sum
-				Console.ReadKey();
-			}
-		}
-	}
-
-
-
 
 			for (int i = 0; i < numbers.Length; i++) {  //looping through array
 				sum = sum + numbers[i];              //each element added to running sum
-			
+            }
+            Console.WriteLine("Sum of list: " + sum); //displays sum
             // display the whole list
             for (int i = 0; i < numbers.Length; i++){
                 Console.WriteLine(numbers[i]);
@@ -46,5 +37,8 @@ namespace FileIO
             }
 
             
-            
+        
             Console.ReadKey();
+    }
+    }
+}
