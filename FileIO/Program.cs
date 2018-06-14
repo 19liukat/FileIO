@@ -21,6 +21,15 @@ namespace FileIO
             for (int i = 0; i < numbers.Length; i++){
                 Console.WriteLine(numbers[i]);
             }
+            //displaying every even number
+            for(int i = 0; i<numbers.Length; i++){
+                if(numbers[i]%2==0){
+                    Console.WriteLine(numbers[i]);
+                }
+            }
+
+            
+            
             Console.ReadKey();
 			}
 		}
