@@ -221,3 +221,5 @@ _Pvt_Extensions
 \.vscode/tasks\.json
 
 FileIO/test\.dat
+
+\.DS_Store
