@@ -18,8 +18,14 @@ namespace FileIO
             {
                 numbers[i] = Int32.Parse(lines[i]);
             }
-            Console.WriteLine(numbers[6]);
-            //numbers = final array w/ int
+
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                if(numbers[i] % 3 == 0)
+                {
+                    Console.WriteLine(numbers[i]);
+                }
+            }
 
 			for (int i = 0; i < numbers.Length; i++) {  //looping through array
 				sum = sum + numbers[i];              //each element added to running sum
