@@ -18,9 +18,9 @@ namespace FileIO
             {
                 numbers[i] = Int32.Parse(lines[i]);
             }
-			for (int i = 0; i < numbers.Length; i++) {  //looping through array
-				sum = sum + numbers[i];              //each element added to running sum
-			
+            Console.WriteLine(numbers[6]);
+            //numbers = final array w/ int
+            Console.ReadKey();
 			}
 			Console.WriteLine("Sum of list: " + sum); //displays sum
 				Console.ReadKey();
@@ -30,3 +30,21 @@ namespace FileIO
 
 
 
+
+			for (int i = 0; i < numbers.Length; i++) {  //looping through array
+				sum = sum + numbers[i];              //each element added to running sum
+			
+            // display the whole list
+            for (int i = 0; i < numbers.Length; i++){
+                Console.WriteLine(numbers[i]);
+            }
+            //displaying every even number
+            for(int i = 0; i<numbers.Length; i++){
+                if(numbers[i]%2==0){
+                    Console.WriteLine(numbers[i]);
+                }
+            }
+
+            
+            
+            Console.ReadKey();
