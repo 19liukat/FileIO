@@ -18,10 +18,10 @@ namespace FileIO
             {
                 numbers[i] = Int32.Parse(lines[i]);
             }
-            Console.WriteLine(numbers[6]);
+            
             //numbers = final array w/ int
     
-
+            Console.WriteLine("Every multiple of three");
             for(int i = 0; i < numbers.Length; i++)
             {
                 if(numbers[i] % 3 == 0)
@@ -35,19 +35,23 @@ namespace FileIO
             }
             Console.WriteLine("Sum of list: " + sum); //displays sum
             // display the whole list
+            Console.WriteLine("Whole List");
             for (int i = 0; i < numbers.Length; i++){
                 Console.WriteLine(numbers[i]);
             }
             //displaying every even number
+            Console.WriteLine("Every even number");
             for(int i = 0; i<numbers.Length; i++){
                 if(numbers[i]%2==0){
                     Console.WriteLine(numbers[i]);
                 }
             }
+            Console.WriteLine("Every fifth number");
             for (int x=0; x<numbers.Length; x+=5){
                 Console.WriteLine(numbers[x]);
                 }
                 //odd numbers
+            Console.WriteLine("Every odd number");
             for (int i = 0; i < numbers.Length; i++)
             {
                 if(numbers[i] % 2 == 1)
