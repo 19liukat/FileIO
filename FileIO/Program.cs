@@ -17,7 +17,7 @@ namespace FileIO
             {
                 numbers[i] = int.Parse(lines[i]);
             }
-            //writing every even number
+            //displaying every even number
             for(int i = 0; i<numbers.Length; i++){
                 if(numbers[i]%2==0){
                     Console.WriteLine(numbers[i]);
