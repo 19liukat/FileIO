@@ -48,7 +48,7 @@ namespace FileIO
                 Console.WriteLine(numbers[x]);
                 }
                 //odd numbers
-            for (int i = 1; i < numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
                 if(numbers[i] % 2 == 1)
                 {
